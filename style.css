@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Xanh+Mono:ital@1&display=swap');
+
+*{
+  font-family:  'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:rgba(233, 219, 219, 0.3);
+}
+
+.container {
+   max-width: 100%;
+   max-height: 100vh;
+}
+
+#wrap, footer {
+background: rgba(241, 241, 210, .5);
+padding: 10px;
+margin: 0 30px;
+}
+#nav, .footer-list {
+background: rgb(115, 108, 108);
+text-align: right;
+padding: 30px;
+margin: 0 30px;
+}
+
+.logo {
+  width: 40px;
+  cursor: pointer;
+}
+
+#nav li {
+display: inline;
+}
+
+#nav a {
+ font-size: 18px;
+text-decoration: none; 
+padding: 0 30px; /* variable width */
+color: beige;
+}
+
+#nav a:hover {
+  color: rgba(245, 245, 159, 0.822);
+}
+
+#section-1, #section-2, #main, #article {
+   padding: 10px;
+  margin: 0 30px;
+}
+
+#section-1 h1 {
+  font-size: 50px;
+  margin:30px auto;
+}
+
+#section-1 p {
+  font-family: 'Xanh Mono', monospace;
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#section-1 h3 {
+  font-size: 2em;
+  padding-bottom: 50px;
+}
+
+#img-1, #img-2, #img-3 {
+  border-radius: 10%;
+  border: 5px solid rgb(209, 167, 103);
+  padding: 5px;
+  cursor: pointer;
+}
+
+#img-1:hover, #img-2:hover, #img-3:hover {
+ transition: 2s;
+ filter: drop-shadow(0 -3mm 3mm rgb(160, 0, 210, .5));
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+hr {
+border-top: dotted #3d3d3a 6px;
+   border-bottom: none;
+   width: 4%;
+   margin: 50px  auto;
+}
+
+#section-2 h4, #main h4 {
+  font-size: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#section-2 li {
+  font-family: 'Xanh Mono', monospace;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.list-img {
+  list-style-image: url(images/Clipboard.png);
+  margin-left: 40%;
+  position: relative;
+}
+
+.section-2-img {
+  border-radius: 30px;
+  border: 5px solid rgb(209, 167, 103);
+ width: 20%;
+ margin-left: 35px;
+ padding: 5px;
+  float: left;
+position: absolute;
+}
+
+
+
+.main-list {
+  border: 5px solid rgb(209, 167, 103);
+  
+  font-weight: 500;
+ list-style-type: upper-roman;
+ margin: 0 20%;
+ line-height: 1.5;
+ padding: 30px 60px;
+}
+
+#article p{
+  font-size: 18px;
+}
+
+#recipe-links {
+  background: rgba(241, 241, 210, .5);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.cooking {
+  list-style: none;
+}
+
+.cooking li {
+  display: inline;
+  padding: 30px;
+}
+
+.cooking  a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(100, 86, 86, 0.904);
+}
+
+  .copyright p {
+    font-size: 10px;
+  text-align: center;
+  color: beige;
+}
+
+
+.footer-list li {
+  display: inline;
+}
+
+.footer-list a {
+  color: beige;
+  padding: 0 30px;
+}
+
+.footer-list a:hover {
+  color: rgb(250, 222, 203);
+}
+
+.copyright {
+  color: beige;
+  text-align: center;
+  font-family: 'Xanh Mono', monospace;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 750px){
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 400) and (max-width: 750px){
+  #recipe-links{
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  main {
+    width: 100%;
+    font-size: 20px;
+    color: green;
+    background: rgba(255, 0, 0, 0.219);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
